@@ -23,14 +23,14 @@ def daily_reminder():
     
     # Modify the reminder if the task is time-bound
     if time_bound == 'yes':
-        reminder += " that requires immediate attention today!"
+        reminder += " It requires immediate attention today!"
     elif time_bound == 'no':
         reminder += " Consider completing it when you have free time."
     else:
         reminder += " The time sensitivity of this task is unclear."
     
     # Print the customized reminder
-    print(reminder)
+    print("Reminder:", reminder)
 
 if __name__ == "__main__":
     daily_reminder()
